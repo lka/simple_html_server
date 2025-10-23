@@ -53,11 +53,16 @@ def run_server(port=8000, directory="."):
         print("Server beendet.")
 
 
-if __name__ == "__main__":
+def main():
+    """Haupteinstiegspunkt für das Kommandozeilen-Tool"""
     # Port aus Kommandozeilen-Argumenten oder Standard verwenden
     port = int(sys.argv[1]) if len(sys.argv) > 1 else 8000
 
     # Optionales Verzeichnis aus Argumenten
-    directory = sys.argv[2] if len(sys.argv) > 2 else "C:\\Users\\herbe\\Documents\\Rezepte\\Ausgang"
+    directory = sys.argv[2] if len(sys.argv) > 2 else "."
 
     run_server(port, directory)
+
+
+if __name__ == "__main__":
+    main()

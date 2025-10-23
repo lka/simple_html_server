@@ -47,6 +47,30 @@ Server mit `Strg+C` beenden.
 
 3. Deine HTML-Dateien werden angezeigt
 
+## Installation
+
+### Option 1: Direkte Verwendung
+Einfach die `simple_server.py` ausführen (siehe Verwendung unten).
+
+### Option 2: Als Paket installieren
+Das Projekt kann als Python-Paket installiert werden:
+
+```bash
+# Installation im Development-Modus
+pip install -e .
+
+# Oder reguläre Installation
+pip install .
+```
+
+Nach der Installation ist der Befehl `simple-server` global verfügbar:
+
+```bash
+simple-server              # Startet auf Port 8000
+simple-server 3000         # Startet auf Port 3000
+simple-server 8000 ./docs  # Serviert ./docs auf Port 8000
+```
+
 ## Anforderungen
 
-- Python 3.x (keine zusätzlichen Pakete nötig)
+- Python 3.7+ (keine zusätzlichen Pakete nötig)
